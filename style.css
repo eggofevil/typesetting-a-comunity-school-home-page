@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'droid_sans';
+    src: url('fonts/DroidSans-webfont.eot') format('eot');
+    src: url('fonts/DroidSans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'droid_sans';
+    src: url('fonts/DroidSans-Bold-webfont.eot') format('eot');
+    src: url('fonts/DroidSans-Bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'droid_serif';
+    src: url('fonts/DroidSerif-Regular-webfont.eot') format('eot');
+    src: url('fonts/DroidSerif-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'droid_serif';
+    src: url('fonts/DroidSerif-Bold-webfont.eot') format('eot');
+    src: url('fonts/DroidSerif-Bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'droid_serif';
+    src: url('fonts/DroidSerif-Italic-webfont.eot') format('eot');
+    src: url('fonts/DroidSerif-Italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'droid_serif';
+    src: url('fonts/DroidSerif-BoldItalic-webfont.eot') format('eot');
+    src: url('fonts/DroidSerif-BoldItalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@counter-style circled-alphabet {
+  system: fixed;
+  symbols: Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ Ⓖ Ⓗ Ⓘ Ⓙ Ⓚ Ⓛ Ⓜ Ⓝ Ⓞ Ⓟ Ⓠ Ⓡ Ⓢ Ⓣ Ⓤ Ⓥ Ⓦ Ⓧ Ⓨ Ⓩ;
+  suffix: " ";
+}
+@counter-style circled-numbers {
+  system: fixed;
+  symbols: \2776 \2777 \2778 \2779 \277A \277B \277C \277D \2792 \2793;
+  suffix: " ";
+}
+  
+  /* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+html {
+  font-size: 10px;
+}
+
+h1, h2 {
+  font-family: droid_sans, sans-serif;
+  letter-spacing: 0.1em;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
+}
+
+section p,
+aside p,
+li {
+  font-family: droid_serif, serif;
+  font-size: 1.5em;
+  line-height: 2em;
+  letter-spacing: 0.03em;
+  word-spacing: 0.1em;
+}
+h2 + p {
+  text-indent: 20px;
+}
+
+a {
+  color: #a66;
+}
+
+a:hover, a:focus, a:visited:hover {
+  color: #6b4141;
+  text-decoration: none;
+  outline: none;
+}
+
+a:visited {
+  color: #a98585;
+}
+
+a:active {
+  font-weight: bold;
+}
+
+a[href*="http"] {
+  background: url(external-link-52.png) no-repeat 100% 0;
+  padding-right: 1.5em;
+  background-size: 1.2em; 
+}
+
+ul {
+  list-style-type: none;
+}
+
+section ul li:before,
+aside ul li:before {
+  color: #a66;
+  /*content: "\2751";*/
+  content: "\25cf";
+  padding-right: 0.4em;
+}
+
+ol {
+  list-style-type: upper-latin;
+}
+
+nav ul li {
+  text-align: center;
+  border: 1px solid #a66;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 4em;
+  margin-bottom: 2em;
+}
+
+nav a {
+  text-decoration: none;
+}
